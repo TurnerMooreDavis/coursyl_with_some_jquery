@@ -14,6 +14,11 @@
 //= require jquery_ujs
 //= require d3
 //= require_tree .
+//= require datetimepicker
+function displayDateTime(){
+  var date = $('.quick-edit-dateTime')
+  date.datetimepicker();
+}
 
 function onlyOnce() {
   var button = $(event.target);
@@ -44,6 +49,6 @@ function smoothScroll() {
     return false;
   });
 }
-
+$(displayDateTime);
 $(smoothScroll);
 $(hideAddElement);

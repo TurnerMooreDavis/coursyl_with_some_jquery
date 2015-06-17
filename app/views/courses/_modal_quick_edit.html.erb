@@ -7,11 +7,11 @@
     <%= form_for(assignment) do |f| %>
     <div>
       <%= f.label :active_at %>
-      <%= f.date_field :active_at %>
+      <%= f.text_field :active_at, class: "quick-edit-dateTime" %>
     </div>
     <div>
       <%= f.label :due_at %>
-      <%= f.date_field :due_at %>
+      <%= f.text_field :due_at, class: "quick-edit-dateTime" %>
     </div>
     <div class="modal-footer">
       <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
